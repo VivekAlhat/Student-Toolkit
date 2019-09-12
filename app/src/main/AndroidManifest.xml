@@ -9,12 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".help"></activity>
+        <activity android:name=".error404" />
+        <activity android:name=".calculator" />
+        <activity android:name=".notes" />
+
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@drawable/circlebackgroundpurple" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
