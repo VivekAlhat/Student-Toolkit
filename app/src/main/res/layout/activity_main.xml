@@ -118,7 +118,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <androidx.cardview.widget.CardView
-            android:id="@+id/err404"
+            android:id="@+id/notes"
             android:foreground="?android:attr/selectableItemBackground"
             android:clickable="true"
             android:layout_width="160dp"
@@ -143,7 +143,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Error 404"/>
+                    android:text="Notes"/>
 
                 <View
                     android:layout_width="match_parent"
@@ -155,7 +155,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Error Information"
+                    android:text="Handy Pocket Notes"
                     android:padding="5dp"
                     android:textColor="@color/cardview_dark_background"/>
             </LinearLayout>

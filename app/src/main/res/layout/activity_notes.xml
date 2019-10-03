@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".error404"
+    tools:context=".notes"
     android:gravity="center">
 
     <TextView
@@ -12,5 +12,5 @@
         android:layout_height="wrap_content"
         android:text="Coming Soon"
         android:textSize="30sp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center" />
 </LinearLayout>
