@@ -65,11 +65,7 @@ public class notes extends AppCompatActivity {
 
         toggleEmptyNotes();
 
-        /**
-         * On long press on RecyclerView item, open alert dialog
-         * with options to choose
-         * Edit and Delete
-         * */
+        // Edit and Delete options
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(this,
                 recyclerView, new RecyclerTouchListener.ClickListener() {
             @Override
@@ -83,10 +79,7 @@ public class notes extends AppCompatActivity {
         }));
     }
 
-    /**
-     * Inserting new note in db
-     * and refreshing the list
-     */
+    // New note creation
     private void createNote(String note) {
         // inserting note in db and getting
         // newly inserted note id
@@ -106,10 +99,7 @@ public class notes extends AppCompatActivity {
         }
     }
 
-    /**
-     * Updating note in db and updating
-     * item in the list by its position
-     */
+    // Update operation
     private void updateNote(String note, int position) {
         Note n = notesList.get(position);
         // updating note text
@@ -125,10 +115,7 @@ public class notes extends AppCompatActivity {
         toggleEmptyNotes();
     }
 
-    /**
-     * Deleting note from SQLite and removing the
-     * item from the list by its position
-     */
+    // Delete operation
     private void deleteNote(int position) {
         // deleting the note from db
         db.deleteNote(notesList.get(position));
@@ -140,11 +127,7 @@ public class notes extends AppCompatActivity {
         toggleEmptyNotes();
     }
 
-    /**
-     * Opens dialog with Edit - Delete options
-     * Edit - 0
-     * Delete - 0
-     */
+    // Dialog option box
     private void showActionsDialog(final int position) {
         CharSequence colors[] = new CharSequence[]{"Edit", "Delete"};
 
@@ -164,12 +147,7 @@ public class notes extends AppCompatActivity {
     }
 
 
-    /**
-     * Shows alert dialog with EditText options to enter / edit
-     * a note.
-     * when shouldUpdate=true, it automatically displays old note and changes the
-     * button text to UPDATE
-     */
+    // Changes edit button to update whenever a change is made
     private void showNoteDialog(final boolean shouldUpdate, final Note note, final int position) {
         LayoutInflater layoutInflaterAndroid = LayoutInflater.from(getApplicationContext());
         View view = layoutInflaterAndroid.inflate(R.layout.note_dialog, null);
@@ -224,9 +202,7 @@ public class notes extends AppCompatActivity {
         });
     }
 
-    /**
-     * Toggling list and empty notes view
-     */
+    //Toggling list and empty notes view
     private void toggleEmptyNotes() {
         // you can check notesList.size() > 0
 
