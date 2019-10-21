@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Binary">
+
+
+    <TextView
+        android:id="@+id/tvBinarySzTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_horizontal"
+        android:text="Binary Size Converter"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/etNumberValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="35dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Enter the Number"
+        android:inputType="textCapCharacters"
+        android:textColor="#FF5722" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvConvertBFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Convert From : "
+            android:textColor="#3F51B5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spConvertFromType"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConvertSz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Convert"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TableLayout
+        android:id="@+id/tbllResultTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvDecimalForm"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginRight="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:padding="10dp"
+                android:text="Decimal From :"
+                android:textColor="#3F51B5"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDecimal"
+                android:layout_width="100dp"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginRight="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:width="0dip"
+                android:gravity="right"
+                android:padding="10dp"
+                android:textColor="#182FB8"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvBinaryForm"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginRight="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:padding="10dp"
+                android:text="Binary Form : "
+                android:textColor="#3F51B5"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvBinary"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginRight="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:width="0dip"
+                android:gravity="right"
+                android:padding="10dp"
+                android:textColor="#182FB8"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvOctalForm"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginRight="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:padding="10dp"
+                android:text="Octal Form :"
+                android:textColor="#3F51B5"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOctal"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginRight="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:width="0dip"
+                android:gravity="right"
+                android:padding="10dp"
+                android:textColor="#182FB8"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvHexaDecimalForm"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginRight="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:padding="10dp"
+                android:text="HexaDecimal Form :"
+                android:textColor="#3F51B5"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvHexa"
+                android:layout_marginLeft="7.5dp"
+                android:layout_marginTop="7.5dp"
+                android:layout_marginRight="7.5dp"
+                android:layout_marginBottom="7.5dp"
+                android:width="0dip"
+                android:gravity="right"
+                android:padding="10dp"
+                android:textColor="#182FB8"
+                android:textSize="18sp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>

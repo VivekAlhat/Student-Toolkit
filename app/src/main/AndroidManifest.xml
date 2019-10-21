@@ -13,9 +13,13 @@
             android:name=".notes"
             android:label="@string/title_activity_notes"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".calculator" />
-        <activity android:name=".converter" />
+        <activity android:name=".Binary"></activity>
+        <activity android:name=".Unit" />
+        <activity android:name=".CGPA" />
+        <activity android:name=".Temperature" />
+        <activity android:name=".ConverterActivity" />
         <activity android:name=".help" />
+        <activity android:name=".calculator" />
         <activity android:name=".splashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,14 +27,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@drawable/circlebackgroundpurple" />
-    </application>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <activity android:name=".MainActivity"/>
+
+          <!--  <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+             -->
+    </application>
 
 </manifest>

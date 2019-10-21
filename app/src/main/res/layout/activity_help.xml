@@ -4,13 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".help"
     android:gravity="center">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Coming Soon"
-        android:textSize="30sp"
-        android:layout_gravity="center" />
+    <fragment
+        android:id="@+id/listFrag"
+        android:name="com.example.studenttoolkit.ListFrag"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@android:layout/simple_list_item_1" />
+
+    <fragment
+        android:id="@+id/infoFrag"
+        android:name="com.example.studenttoolkit.InfoFrag"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        tools:layout="@layout/fragment_info" />
+
 </LinearLayout>

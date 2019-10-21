@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#B388FF</color>
-    <color name="colorPrimaryDark">#7C4DFF</color>
+    <color name="colorPrimary">#181496</color>
+    <color name="colorPrimaryDark">#0f0d69</color>
     <color name="backgroundColor">#FCFCFC</color>
     <color name="lightGray">#EDEDED</color>
-    <color name="deepPurple">#7C4DFF</color>
+    <color name="deepBlue">#0f0d69</color>
     <color name="yellow">#FFB300</color>
     <color name="green">#00BFA5</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#1B70D8</color>
     <color name="msg_no_notes">#999</color>
     <color name="hint_enter_note">#89c3c3c3</color>
     <color name="timestamp">#858585</color>
